@@ -1,0 +1,5 @@
+config SHIELD_B0B_CLAVERT_LEFT
+    def_bool $(shields_list_contains,b0b_clavert_left)
+
+config SHIELD_B0B_CLAVERT_RIGHT
+    def_bool $(shields_list_contains,b0b_clavert_right)
