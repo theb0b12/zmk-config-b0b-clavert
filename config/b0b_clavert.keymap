@@ -5,24 +5,24 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        Base {
             display-name = "Base";
             bindings = <
-                &kp A &kp B &kp C &kp D
-                &kp E &kp F &kp G &kp H
-                &kp I &kp J
-                &kp K &kp L &kp M &kp N
-                &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X
-                &kp Y &kp Z &kp A &kp B
-                &kp C &kp D &kp E &kp F
-                &kp G &kp H &kp I &kp J
-                &kp K &kp L &kp M &kp N
-                &kp O &kp P &kp Q &kp R &kp S &kp T &kp U &kp V &kp W &kp X
-                &kp Y &kp Z
-                &kp A &kp B &kp C &kp D
-                &kp E &kp F &kp G &kp H
-                &kp I &kp J &kp K &kp L &kp M &kp N
-                &kp O &kp P &kp Q &kp R
+&trans  &kp ESC                                                      &trans     &trans
+&kp Q   &kp N5                                                       &kp N6     &kp P
+&kp F                                                                           &kp J
+&trans  &kp E                                                        &kp I      &kp SQT
+&trans  &kp C      &trans  &kp R   &trans    &trans  &kp U   &trans  &kp COMMA  &trans
+&trans  &trans                                                       &trans     &trans
+&kp T   &trans                                                       &trans     &kp Y
+&trans  &trans                                                       &trans     &trans
+&kp V   &kp B                                                        &kp N      &kp M
+&kp X   &kp W      &kp N2  &kp N3  &trans    &trans  &kp N8  &kp N9  &kp O      &kp DOT
+&kp D                                                                           &kp K
+&kp S   &kp ENTER                                                    &kp SPACE  &kp L
+&kp N1  &kp A                                                        &kp SEMI   &kp N0
+&trans  &kp Z      &kp G                                     &kp H   &kp FSLH   &trans
+&trans  &kp N4                                                       &kp N7     &trans
             >;
         };
     };
