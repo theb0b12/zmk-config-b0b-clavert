@@ -29,3 +29,4 @@
 &physical_layout_b0b_clavert {
     kscan = <&kscan0>;
 };
+
