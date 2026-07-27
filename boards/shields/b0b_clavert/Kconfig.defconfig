@@ -24,3 +24,11 @@ config ZMK_SPLIT
     default y
 
 endif
+
+# --- Pinctrl Kconfig for part "right" ---
+if BOARD_NICE_NANO_V2 && SHIELD_B0B_CLAVERT_RIGHT
+
+config SPI
+    default y
+
+endif
