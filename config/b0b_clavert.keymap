@@ -8,24 +8,42 @@
         Base {
             display-name = "Base";
             bindings = <
-&kp A   &kp ESC                                                       &kp A      &kp A
-&kp Q   &kp N5                                                        &kp N6     &kp P
-&kp F                                                                            &kp J
-&kp A   &kp E                                                         &kp I      &kp SQT
-&kp A   &kp C         &kp A   &kp R   &kp A    &kp A  &kp U   &kp A   &kp COMMA  &kp A
-&kp A   &kp A                                                         &kp A      &kp A
-&kp T   &kp A                                                         &kp A      &kp Y
-&kp A   &kp A                                                         &kp A      &kp A
-&kp V   &kp B                                                         &kp N      &kp M
-&kp X   &kp W         &kp N2  &kp N3  &kp A    &kp A  &kp N8  &kp N9  &kp O      &kp DOT
-&kp D                                                                            &kp K
-&kp S   &kp ENTER                                                     &kp SPACE  &kp L
-&kp N1  &kp A                                                         &kp SEMI   &kp N0
-&kp A   &kp Z         &kp G                                   &kp H   &kp FSLH   &kp A
-&kp A   &kp NUMBER_4                                                  &kp N7     &kp A
+&kp A           &bootloader                                                   &bootloader    &kp A
+&kp Q           &kp N5                                                        &kp N6         &kp P
+&kp F                                                                                        &kp J
+&kp LEFT_SHIFT  &kp E                                                         &kp I          &kp SQT
+&kp TAB         &kp C         &kp A   &kp R   &kp A    &kp A  &kp U   &kp A   &kp COMMA      &kp A
+&kp ESCAPE      &kp A                                                         &kp BACKSPACE  &kp BACKSPACE
+&kp T           &kp A                                                         &kp DEL        &kp Y
+&kp A           &kp A                                                         &mo 1          &kp A
+&kp V           &kp B                                                         &kp N          &kp M
+&kp X           &kp W         &kp N2  &kp N3  &kp A    &kp A  &kp N8  &kp N9  &kp O          &kp DOT
+&kp D                                                                                        &kp K
+&kp S           &kp ENTER                                                     &kp SPACE      &kp L
+&kp N1          &kp A                                                         &kp SEMI       &kp N0
+&kp A           &kp Z         &kp G                                   &kp H   &kp FSLH       &kp A
+&kp LEFT_SHIFT  &kp NUMBER_4                                                  &kp N7         &kp A
+            >;
+        };
+
+        upper {
+            bindings = <
+&trans  &kp F6                                                        &kp F7     &trans
+&trans  &kp F5                                                        &kp F8     &trans
+&trans                                                                           &kp EQUAL
+&trans  &trans                                                        &trans     &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans   &trans     &trans     &trans
+&trans  &trans                                                        &trans     &trans
+&trans  &trans                                                        &trans     &trans
+&trans  &trans                                                        &trans     &trans
+&trans  &trans                                                        &kp UNDER  &kp PLUS
+&trans  &trans  &kp F2  &kp F3  &trans    &trans  &kp F10  &kp F11    &trans     &trans
+&trans                                                                           &trans
+&trans  &trans                                                        &trans     &trans
+&kp F1  &trans                                                        &trans     &kp F12
+&trans  &trans  &trans                                     &kp MINUS  &trans     &trans
+&trans  &kp F4                                                        &kp F9     &trans
             >;
         };
     };
 };
-
-
