@@ -1,4 +1,4 @@
-#include <physical_layouts.dtsi>
+// #include <physical_layouts.dtsi>
 
 / {
     physical_layout_b0b_clavert: physical_layout_b0b_clavert {
