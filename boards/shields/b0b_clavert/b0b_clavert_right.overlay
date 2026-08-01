@@ -1,40 +1,5 @@
 #include "b0b_clavert.dtsi"
 
-#include <dt-bindings/zmk/input_transform.h>
-
-// Choose driver: Uncomment UART for high performance, comment out to fallback to GPIO
-#define MOUSE_PS2_DRIVER_UART
-
-// SCL / CLK connected to D0
-#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 0 GPIO_ACTIVE_HIGH>
-
-// SDA / DTA connected to D1
-#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 1 GPIO_ACTIVE_HIGH>
-
-// Map SDA (D1 -> P0.06) for the UART receiver pinctrl configuration
-#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 6)>
-
-// Enable Power-On-Reset since your classic ThinkPad TrackPoint requires a reset sequence (connected to D2)
-#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 2 GPIO_ACTIVE_HIGH>
-
-/ {
-    chosen {
-        zmk,mouse_ps2 = &mouse_ps2;
-    };
-};
-
-// Include the core PS/2 driver logic provided by the module
-#include <kb_zmk_ps2_mouse_trackpoint_driver/mouse_ps2.dtsi>
-
-// Input listener setup to map movement to ZMK pointer events
-/ {
-    mouse_ps2_input_listener: mouse_ps2_input_listener {
-        compatible = "zmk,input-listener-ps2";
-        status = "okay";
-        device = <&mouse_ps2>;
-    };
-};
-
 / {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";

@@ -1,4 +1,4 @@
-// #include "b0b_clavert-layouts.dtsi"
+#include "b0b_clavert-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
@@ -26,7 +26,7 @@
     };
 };
 
-//&physical_layout_b0b_clavert {
- //   transform = <&matrix_transform0>;
-//};
+&physical_layout_b0b_clavert {
+    transform = <&matrix_transform0>;
+};
 

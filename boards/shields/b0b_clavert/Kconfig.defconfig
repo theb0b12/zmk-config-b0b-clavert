@@ -1,4 +1,4 @@
-if SHIELD_B0B_CLAVERT_RIGHT
+if SHIELD_B0B_CLAVERT_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
@@ -8,13 +8,13 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 1
+  default 1
 
 config BT_MAX_CONN
-    default 6
+  default 6
 
 config BT_MAX_PAIRED
-    default 6
+  default 6
 
 endif
 
